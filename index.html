@@ -1,25 +1,209 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title> LingoPros </title>
-</head>
+<title>LingoPros</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 <body>
 
-<h1> Welcome to Team LingoPros!</h1>
-<h4>Currently under construction check back later for full website...</h4>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+    <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECT</a>
+    <a href="#code" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CODE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
 
-<img src="lp-logo-border.png" alt="LingoPros Logo" style="width:228px;height:228px;">
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large">TEAM</a>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large">PROJECT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Team Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
+    <h2 class="w3-wide">LingoPros</h2>
+    <p class="w3-opacity"><i>We love linguistic analytics.</i></p>
+    <p class=".w3-image"><img src="./images/lpLogo.png"/></p>
+    <p class="w3-justify"><p></p>The goal of this company is twofold: develop a prosodic labeler based on the ToBI (Tone and Break Indices) speech annotation model and provide a web portal for users to upload audio samples for analysis with the new labeler. The new prosodic labeler will function similarly to the previous labeler based on the Brazil model in that it will receive audio samples, identify different features based on prosodic measures and then return a proficiency score of the speaker based on the audio sample.</p>
 
 
-<h3> Team Members Contact Information: </h3>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-quarter">
+        <p>Josh Shaffer</p>
+        <img src="./images/josh.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <p class="w3-opacity w3-center"><i>Coder, Customer Communicator, Team Website, Printer</i></p>
+      </div>
+      <div class="w3-quarter">
+        <p>Luis Montes</p>
+        <img src="./images/luis.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <p class="w3-opacity w3-center"><i>Coder (Node.js), Release Manager, Code Reviewer</i></p>
+      </div>
+      <div class="w3-quarter">
+        <p>Erik Strauss</p>
+        <img src="./images/erik.png" class="w3-round" alt="Random Name" style="width:60%">
+        <p class="w3-opacity w3-center"><i>Coder (Matlab), Team Website, Architect</i></p>
+        
+      </div>
+      <div class="w3-quarter">
+        <p>Matthew Quintana</p>
+        <img src="./images/matt.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <p class="w3-opacity w3-center"><i>Coder, Recorder, Editor</i></p>
+      </div>
+    </div>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSN8_gcm7o66vxbE8f_-NedwU59tdzYKKOY5WzakaUFCnTwDkqACksct7sbSdaWRGrMkAGg9O95hJzJ/pub" target="_blank">Find out more about us here.</a>
+  </div>
+
+  <!-- The Project Section -->
+  <div class="w3-black" id="project">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Project: Web Based Prosodic Labeling Chain</h2>
 
 
-<ul>
-  <li>Josh Shaffer (Team Lead) - jls865@nau.edu</li>
-  <li>Luis Montes - lm877@nau.edu</li>
-  <li>Erik Strauss - ems394@nau.edu</li>
-  <li>Matt Quintana - mq56@nau.edu</li>
-</ul>
+      <p class="w3-opacity w3-center"><i>An overview</i></p><br>
+          <p class="w3-justify">Most people probably don't think about it but when you are speaking with someone and your tone doesn't match theirs they will start to pick up on that and it will cause an awkwardness or distance between you two. This is especially true with non-native english speakers that have a hard time not only speaking the language but picking up on certain aspects of language such as sarcasm, sincerity, compassion, or emphasis. Thats where our project comes in to play because the goal is to basically analyze prosody which is the patterns of stress and intonation in speech. This is important so that the speaker and researchers can better understand these parts of speech and learn from the results. Dr. Okim our client/sponsor is interested in comparing two frameworks which are currently used today to analyze prosody one being David Brazil's model which is the one she has studied and thinks is the most accurate when it comes to conversational speech. The other framework being ToBI(Tones and Break Indices) which is a more popular system for analyzing prosody developed by researchers at MIT and is more reckognized and established than David Brazil's model.</p>
+          <p class=".w3-image"><img src="./images/programRun.png" style="margin: auto; width: 50%; border: 3px solid #64dcfc; padding: 10px; display: block;"/></p><p class="w3-justify">
+          <p class="w3-opacity w3-center"><i>A typical Prosodic labeling program running.</i></p><br>
+
+           This is what Dr. Okim is wanting to change because she believes her framework is more accurate and wants to prove or disprove it. Currently the system for using both of these frameworks and comparing them is very tedious and complex. For example, the tool chain is currently spread across several independent software products running on different platforms which is incovenient and time consuming. Thats where our project comes in because we are to simplify this process by creating a web-based prosodic labeling toolchain that combines the two frameworks in one place so that each can be tested and analyzed side by side in a much more convenient way. This will save our sponsor so much time and effort because she will not only have a simple way to test these things herself but also a way for other people to test and compare results so that she can prove her point.</p>
+
+           <p class="w3-opacity w3-center"><br><i>High Level Requirements</i></p>
+           <p>The way the computer will score an audio file will be by using a binary tree. The exact semantics have yet to be discussed, but essentially when the computer gets a score for one measurement it will branch off in a certain way. It will then find another measurement and branch again. It will go until it determines the final score. A diagram of this can be seen below:</p>
+           <p class=".w3-image"><img src="./images/scoringExample.png" style="margin: auto; width: 80%; border: 3px solid #64dcfc; padding: 10px; display: block;"/></p>
+
+           <p class="w3-justify">
+
+            <br>
+            <img src="./images/flow.png" align="right" style="width: 30%;border: 3px solid #64dcfc; padding: 10px;margin-right: 20px;"/>
+           <p>After the suprasegmental measurements have been scored, the results are compared to the human scores for accuracy. Depending on the accuracy of the machine scores, the audio sample will be analyzed again, but with a different set of suprasegmental measures until the accuracy reaches a high enough threshold. The full mechanics of the program are illustrated as well.</p>
+
+           <p>The program will be split into two parts using two different languages. First off, we plan to use Java along with to ToBI framework to extract the prosodic features present in the audio file. The second half will be using MATLAB to design the scoring and machine-learning sections of the program. </p>
+
+           <p>The existing code is in C++ and MATLAB, but the C++ is in a linux environment whereas the MATLAB is in a windows environment. So we are using Java instead of C++ so it would be easier to run in one environment. Dr. Johnson, who programmed the current system, believes this is a good approach to implementing the ToBI version.</p>
+           </p>
+           <br>
+           <p class="w3-opacity w3-center"><br><i>High Level Design Philosphy and Concept</i></p>
+           <p>The goal of the project is twofold: develop a prosodic labeler based on the ToBI (Tone and Break Indices) speech annotation model and provide a web portal for users to upload audio samples for analysis with the new labeler. The new prosodic labeler will function similarly to the previous labeler based on the Brazil model in that it will receive audio samples, identify different features based on prosodic measures and then return a proficiency score of the speaker based on the audio sample.</p>
+           <p>Some goals for the web portal we have are:</p>
+           <ul>
+            <li>User accounts</li>
+           <li>Single location for interacting with all parts of toolchain</li>
+           
+            <ul>
+              <li>KALDI phone extractor</li>
+              <li>Phone combiner</li>
+              <li>Syllable analyzer</li>
+            </ul>
+<li>Display results of audio analyses</li>
+            </ul>
+           <br>
+           <p class="w3-opacity w3-center"><br><i>Technologies</i></p>
+           <p>The Project has two main parts being the Prosodic Labeling Chain, and the web portal.</p>
+           <ul>
+            Prosodic Labeling Chain:
+              <li><b>Java</b> will be used for this application mainly because of the group's experience writing in it. This language was also suggested from the client's partner who is has a Phd in software engineering. Using Java's many libraries and many apis will no doubt streamline the process in translating the ToBi algorithm to a full fledged application as there will be code already written for us so we can hasten the application building.Namely, Java has an API for extracting curviture from soundwave files which will be crucial in implementing the ToBi algorithm which deals strictly in deciphering information from soundwave arc size and frequency.</li>
+              <li><b>Matlab</b> will be also used for building this application as our group has slightly more experience in Matlab GUI writing than Java GUI writing. We are trying to work with what we have most experience as a whole with so to finish this project the most efficiently and on time.  A Matlab GUI and a Java based application are rather common combinations for mathmatical analysis, so we are not venturing into uncharted waters with this plan.  
+              </li>
+              <br>
+            Web portal:
+            <li><b>Hosting will be done on the NAU CEFNS Server</b>. This is per Dr. Kang's request as keeping this project affordable is something that free server space for being faculty calls for.  The demands of server to client distribution will be very small since only a few colleagues of hers and herself will be using the application at least until further testing perhaps beyone the Capstone Sequence.  A larger server like a Digital Ocean</li>
+            <li>Web langauges like <b>HTML5, CSS3, and JavaScript</b> will be needed for writing our front-end as the provide the structure and styling to most web applications today.  We have plenty of experience with these markup languages as the Team Inventory suggests, so this was a natural choice.</li>
+            <li><b>Node.js, a web 2.0 runtime environment for JavaScript serverside coding</b>. This choice makes for uniformity amongst writing the front end and back end of our web application and hence is a sound choice for consistency and code maintainablility since no syntax conversions need to be made when working on either side of the Internet DMZ. With JavaScript serverside as opposed to the traditional PHP to client via AJAX method, we unlock the 475k module apis available through <a href="https://www.npmjs.com" target="_blank">NPM</a>, or Node Package Manager.  Nearly any simple function we need can be imported, trusted to be well tested, and used to make this web application quickly.</li>
+           <li><b>MongoDB for our database</b>. A JavaScript database for user accounts and stored sound files again helps us to be consistent in language choice for our web application.  Instead of having to switch between syntax of JavaScript and SQL (for example), we can use JavaScript throughout all of the web application.  While SQL and MongoDB could likely do a similar job of storing and retrieving client data, MongoDB functionality could be aided by some of the many APIs JavaScript has included (and some of the NPM packages) to make our job of coding even more streamlined. With this group's heavy experience with JavaScript, make a full stack Node.js application is the best way to go in completing the project to LingoPros' high quality standards.</li>
+           </ul>
+
+
+
+<br>  
+  <p class="w3-opacity w3-center"><br><i>Schedule</i></p>
+  <table class="w3-table-all  w3-justify " style="color:#000">
+    <tr>
+      <th>Assignment</th>
+      <th>Due Date</th>
+      <th>Compeletion Status</th>
+    </tr>
+    <tr>
+      <td>Prosodic Labeling Chain</td>
+      <td>December 14, 2017</td>
+      <td>In Progress</td>
+    </tr>
+    <tr>
+      <td>Web Portal for Prosodic Labeling Chain</td>
+      <td>TBD</td>
+      <td>Must finish more recent first.</td>
+    </tr>
+    <tr>
+      <td>Unit Testing the Web Portal</td>
+      <td>TBD</td>
+      <td>Must finish more first.</td>
+    </tr>
+  </table>
+</div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="code">
+      <h2 class="w3-wide w3-center">CODE</h2>
+      <a href="https://github.com/louiemontes/cs476_teamWebsite" target="_blank"><p class="w3-opacity w3-center"><i>Find our project's source code (so far) here.</i></p></a>
+
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Need to get in contact?</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Josh Shaffer<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: jls865@nau.edu<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Luis Montes<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: lm877@nau.edu<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Erik Strauss<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: ems394@nau.edu<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Matthew Quintana<br>
+        <i class="fa fa-envelope" style="width:30px"> </i>Email: mq56@nau.edu<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Client<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Okim Kang, Phd<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: (Awaiting Confirmation to Post)<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Mentor<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Ana Steinmacher<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: (Awaiting Confirmation to Post)<br>
+      </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
 
 </body>
 </html>
