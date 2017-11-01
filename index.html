@@ -13,10 +13,11 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card-2">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
     <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECT</a>
-    <a href="#code" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CODE</a>
+    <a href="deliverables.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DELIVERABLES</a>
+    <a href="https://github.com/louiemontes/cs476_teamWebsite" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CODE</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
   </div>
 </div>
@@ -36,7 +37,7 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
     <h2 class="w3-wide">LingoPros</h2>
     <p class="w3-opacity"><i>We love linguistic analytics.</i></p>
-    <p class=".w3-image"><img src="./images/lpLogo.png"/></p>
+    <p class=".w3-image"><img src="./images/lpLogo.png"/ style="width:250px;height=250px></p>
     <p class="w3-justify"><p></p>The goal of this company is twofold: develop a prosodic labeler based on the ToBI (Tone and Break Indices) speech annotation model and provide a web portal for users to upload audio samples for analysis with the new labeler. The new prosodic labeler will function similarly to the previous labeler based on the Brazil model in that it will receive audio samples, identify different features based on prosodic measures and then return a proficiency score of the speaker based on the audio sample.</p>
 
 
@@ -44,28 +45,25 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-row w3-padding-32">
       <div class="w3-quarter">
         <p>Josh Shaffer</p>
-        <img src="./images/josh.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <img src="./images/josh.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:110px;height:150px;">
         <p class="w3-opacity w3-center"><i>Coder, Customer Communicator, Team Website, Printer</i></p>
       </div>
       <div class="w3-quarter">
         <p>Luis Montes</p>
-        <img src="./images/luis.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <img src="./images/luis.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:110px;height:150px;">
         <p class="w3-opacity w3-center"><i>Coder (Node.js), Release Manager, Code Reviewer</i></p>
       </div>
       <div class="w3-quarter">
         <p>Erik Strauss</p>
-        <img src="./images/erik.png" class="w3-round" alt="Random Name" style="width:60%">
-        <p class="w3-opacity w3-center"><i>Coder (Matlab), Team Website, Architect</i></p>
-        
+        <img src="./images/erik.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:110px;height:150px;">
+        <p class="w3-opacity w3-center"><i>Coder (Matlab), Team Website, Architect</i></p>   
       </div>
       <div class="w3-quarter">
         <p>Matthew Quintana</p>
-        <img src="./images/matt.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <img src="./images/matt.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:110px;height:150px;">
         <p class="w3-opacity w3-center"><i>Coder, Recorder, Editor</i></p>
       </div>
     </div>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vSN8_gcm7o66vxbE8f_-NedwU59tdzYKKOY5WzakaUFCnTwDkqACksct7sbSdaWRGrMkAGg9O95hJzJ/pub" target="_blank">Find out more about us here.</a>
-  </div>
 
   <!-- The Project Section -->
   <div class="w3-black" id="project">
@@ -155,15 +153,10 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="code">
-      <h2 class="w3-wide w3-center">CODE</h2>
-      <a href="https://github.com/louiemontes/cs476_teamWebsite" target="_blank"><p class="w3-opacity w3-center"><i>Find our project's source code (so far) here.</i></p></a>
-
-  </div>
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <h2 class="w3-wide w3-center">CONTACT INFORMATION:</h2>
     <p class="w3-opacity w3-center"><i>Need to get in contact?</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
@@ -183,14 +176,22 @@ body {font-family: "Lato", sans-serif}
         <i class="fa fa-envelope" style="width:30px"> </i>Email: mq56@nau.edu<br>
       </div>
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>Client<br>
-        <i class="fa fa-map-marker" style="width:30px"></i> Okim Kang, Phd<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: (Awaiting Confirmation to Post)<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Client #1<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Dr. Okim Kang<br>
+        <i class="fa fa-envelope" style="width:30px"> </i>
+        <a href="https://nau.edu/cal/english/directory/okim-kang/">Website</a><br>
       </div>
       <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Client #2<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Dr. David O. Johnson<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> 
+        <a href= "https://people.eecs.ku.edu/~davidojo/">Website</a><br>
+      </div>
+  
+      <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i>Mentor<br>
-        <i class="fa fa-map-marker" style="width:30px"></i>Ana Steinmacher<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: (Awaiting Confirmation to Post)<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Ana Paula Chaves Steinmacher<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: acs549@nau.edu<br>
       </div>
   </div>
   
